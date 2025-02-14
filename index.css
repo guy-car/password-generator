@@ -24,7 +24,13 @@ h2 {
     line-height: 42px;
 }
 .green-text {
-    color: #4ADF86;
+    background-image: linear-gradient(45deg, #f3ec78, #e774e7);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 button {
     font-family: inherit;
@@ -64,14 +70,23 @@ text-align: left;
             margin-top: 35px;
             margin-bottom: 35px;
             margin-right: 20px;
-            background-color: #10B981;
-            color: #FFFFFF;
+            background-image: linear-gradient(45deg, #f3ec78, #e774e7);
+            background-size: 100%;
+            background-clip: button;
+            -webkit-background-clip: button;
+            -moz-background-clip: button;
+            -webkit-text-fill-color: rgb(0, 0, 0); 
+            -moz-text-fill-color: rgb(0, 0, 0); 
+            font-weight: 800;
+        }
+        #gen-btn:hover {
+            box-shadow: 0 0 5px #ffffff;
         }
         .settings {
             width: 60px;
             height: 32px;
             background-color: #273549;
-            color: #FFFFFF;
+            color: #D5D4D8;
             font-family: inherit;
             font-size: 16px;
             font-weight: 500;
@@ -79,6 +94,10 @@ text-align: left;
             padding-bottom: 9px;
             border-radius: 6px;
             border: none;
+        }
+        .settings:hover {
+            box-shadow: 0 0 5px #ffffff;
+
         }
         #ss1-btns {
             display: flex;
@@ -101,7 +120,7 @@ text-align: left;
         .settings-text {
             text-align: left;
             margin: 0px;
-            color: #4ADF86;
+            color: #D5D4D8;
             font-size: 12px;
             font-weight: 300;
             letter-spacing: 1px;
@@ -129,8 +148,29 @@ text-align: left;
             width: 211px;
             height: 39px;
             margin-top: 35px;
-            color: #55F991;
-            background-color: #273549;
+        }
+        .pwd-btn:hover {
+            box-shadow: 0 0 5px #ffffff;
+        }
+        #pwd-el-one {
+            background-image: linear-gradient(45deg,#ffffff, #f3ec78);
+            background-size: 100%;
+            background-clip: button;
+            -webkit-background-clip: button;
+            -moz-background-clip: button;
+            -webkit-text-fill-color: rgb(0, 0, 0); 
+            -moz-text-fill-color: rgb(0, 0, 0); 
+            font-weight: 800;
+        }
+        #pwd-el-two {
+            background-image: linear-gradient(45deg,#ffffff, #e774e7);
+            background-size: 100%;
+            background-clip: button;
+            -webkit-background-clip: button;
+            -moz-background-clip: button;
+            -webkit-text-fill-color: rgb(0, 0, 0); 
+            -moz-text-fill-color: rgb(0, 0, 0); 
+            font-weight: 800;
         }
 
 /* TOGGLE DESIGN */
@@ -170,17 +210,17 @@ text-align: left;
             width: 26px;
             left: 4px;
             bottom: 4px;
-            background-color: white;
+            background-color: #e774e7;
             -webkit-transition: .4s;
             transition: .4s;
           }
           
           input:checked + .slider {
-            background-color: #10B981;
+            background-color: #f3ec78;
           }
           
           input:focus + .slider {
-            box-shadow: 0 0 1px #10B981;
+            /* box-shadow: 0 0 3px #ffffff; */
           }
           
           input:checked + .slider:before {
@@ -196,4 +236,9 @@ text-align: left;
           
           .slider.round:before {
             border-radius: 50%;
+          }
+
+          /* Hover effect */
+          .slider:hover {
+            box-shadow: 0 0 3px #ffffff;
           }
