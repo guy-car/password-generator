@@ -10,6 +10,7 @@ const checkboxes = document.querySelectorAll(".switch input")
 const includeNumbers = document.querySelector("#include-numbers")
 const includeSymbols = document.querySelector("#include-symbols")
 
+// Listens for tweaks made by the user to how the password is generated
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener("change", function() {
     console.log(checkbox.id + " " + checkbox.checked)
@@ -17,6 +18,7 @@ checkboxes.forEach(checkbox => {
     })
 });
 
+// Tweaks the characters array to user preference
 function tweak() {
     // Always reset to the full original set first, and only filter if necessary
     characters = [...originalCharacters];
